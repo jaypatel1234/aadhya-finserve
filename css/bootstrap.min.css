@@ -375,7 +375,12 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: button
+  /* Your desired styling properties */
+  border: 1px solid gray;
+  padding: 5px 10px;
+  background-color: #eaeaea;
+  color: #333;
+  /* Add any additional styling properties as needed */
 }
 
 button:not(:disabled),
@@ -434,10 +439,13 @@ legend+* {
     height: auto
 }
 
-[type="search"] {
+input[type="search"] {
     outline-offset: -2px;
-    -webkit-appearance: textfield
-}
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: white;
+    color: black;
+  }  
 
 ::-webkit-search-decoration {
     -webkit-appearance: none
@@ -2263,7 +2271,6 @@ textarea.form-control-lg {
     background-size: contain;
     border: 1px solid rgba(0, 0, 0, 0.25);
     appearance: none;
-    color-adjust: exact
 }
 
 .form-check-input[type="checkbox"] {
