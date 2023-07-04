@@ -3,7 +3,11 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */:root {
+ */
+ /* *{
+    border:1px solid black;
+ } */
+ :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -7878,6 +7882,7 @@ fieldset:disabled .btn {
 }
 
 .text-start {
+    display: flex;
     text-align: left !important
 }
 
