@@ -4,9 +4,10 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- /* *{
-    border:1px solid black;
- } */
+ /* div {
+    border: 1px solid black;
+  } */
+   
  :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
