@@ -54,6 +54,43 @@ h6,
     opacity: 1;
 }
 
+/*** our partner ***/
+
+.partners {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.partner-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.partner-slide {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.partner-slide:last-child {
+    margin-right: 0;
+}
+
+.partner-slide img {
+    max-height: 100px;
+}
+
+/* Optional: Customize the appearance */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
 
 /*** Button ***/
 .btn {
@@ -194,7 +231,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
