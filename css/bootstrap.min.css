@@ -47,13 +47,602 @@
     }
 }
 
+/* partners */
+.custom-row {
+    align-items: center;
+}
+
+.custom-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-input-icon {
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.custom-heading {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.dsa-form {
+    border: 2px solid #FF579D;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-input-container .custom-input-icon {
+    color: #FF378A;
+}
+
+.custom-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.dsa-form h5 {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.icon-partner {
+    padding-bottom: 7px;
+    font-size: 2.5rem;
+}
+
+.dsa-form p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.custom-btn {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.img-container1 {
+    position: relative;
+}
+
+.img-container1::before,
+.img-container1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4%;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.img-container1::before {
+    left: 0;
+}
+
+.img-container1::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+@media (max-width: 360px) {
+    .dsa-form h5 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .dsa-form p {
+        font-size: 12px;
+    }
+}
+
+/* Who Can Become a Partner with AADHYA FINSERVE INDIA */
+.partner-aadhya {
+    background-color: #fdf6f8;
+}
+
+.partner-tabs {
+    max-width: 1020px;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.partner-tabs h2 {
+    font-size: calc(1.3rem + 1vw);
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.partner-tabs p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.custom-tabs .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-tabs .nav-link {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.custom-tabs .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-tabs .nav-link span {
+    margin-top: 10px;
+}
+
+.nav.nav-tabs {
+    border-bottom: none;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+
+.nav.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+.nav.nav-tabs .nav-link {
+    border: none;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.nav.nav-tabs .nav-link span {
+    display: block;
+    text-align: center;
+}
+
+.nav.nav-tabs .nav-link.active {
+    background-color: #ED2A7B;
+    color: #ffffff;
+    border-color: #000000;
+    border-bottom: 2px solid hwb(0 0% 100%);
+}
+
+.tab-content {
+    padding: 30px 0;
+}
+
+
+.left-content h3 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.left-content p {
+    margin-bottom: 20px;
+}
+
+.left-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.common-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9E1E62;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.common-btn:hover {
+    background-color: #E860A9;
+}
+
+.img-container img {
+    display: block;
+    width: 80%;
+    padding-top: 3%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .custom-tabs .nav-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        max-width: 100%;
+        padding: 0 0px;
+        overflow: auto;
+        border: 1px solid #FF579D;
+        border-radius: 5px;
+    }
+
+    .custom-tabs .nav-link {
+        flex: initial;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .custom-tabs .nav-link span {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .partner-aadhya .custom-tabs .tab-pane p {
+        text-align: justify;
+    }
+}
+
+/* Loan DSA Partner Program Registration - Ruloans   */
+
+@media (max-width: 767px) {
+    .class-p {
+        text-align: justify;
+    }
+}
+
+/* registration steps  */
+.registration-container {
+    background-color: #fdf6f8;
+    padding: 40px 0;
+}
+
+.custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.custom-registration-content {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.custom-registration-steps {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.custom-step {
+    text-align: center;
+    flex-basis: 50%;
+    max-width: 400px;
+}
+
+.custom-step img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.custom-final-message {
+    font-size: 18px;
+    font-weight: 500;
+    color: #5f5f5f;
+    margin-bottom: 40px;
+}
+
+.custom-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.custom-hover {
+    color: #000;
+    background-color: #ffd7e2;
+    height: 150px;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .custom-hover {
+        height: 110px;
+    }
+}
+
+.custom-step {
+    text-align: center;
+    flex-basis: 50%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+    /* Add transition property */
+}
+
+.custom-step:hover {
+    transform: scale(1.05);
+}
+
+.custom-step {
+    text-align: center;
+    flex-basis: 50%;
+    max-width: 400px;
+}
+
+.custom-step img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.custom-final-message {
+    font-size: 18px;
+    font-weight: 500;
+    color: #5f5f5f;
+    margin-bottom: 40px;
+}
+
+.custom-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .custom-step {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .custom-step img {
+        width: 130px;
+        height: 130px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .custom-final-message {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .custom-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* Media Queries for Responsive Layout */
+
+@media (max-width: 768px) {
+    .custom-registration-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-step {
+        width: 0px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .custom-step img {
+        width: 130px;
+        height: 130px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .custom-btn {
+        font-size: 16px;
+    }
+}
+
+/* benifits and perk */
+
+.container-custom,
+.container-fluid-custom,
+.container-sm-custom,
+.container-md-custom,
+.container-lg-custom,
+.container-xl-custom,
+.container-xxl-custom {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.accordion1-body {
+    padding: 1rem 1.25rem;
+    background-color: #fdf6f8;
+}
+
+.sy-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mbb-2 {
+    margin-bottom: 2rem !important;
+}
+
+/* benifits of dsa program */
+.custom-wrapper {
+    background-color: #fdf6f8;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-wrapper .container {
+    width: 100%;
+}
+
+.custom-title {
+    margin-bottom: 30px;
+}
+
+.custom-title span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #dc3545;
+}
+
+.custom-title h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-title p {
+    font-size: 16px;
+    color: #666;
+}
+
+.custom-row {
+    margin-top: 30px;
+}
+
+.custom-block {
+    margin-bottom: 30px;
+}
+
+.custom-block img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.custom-block h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.custom-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+    .custom-wrapper .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .custom-row {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .custom-block {
+        text-align: center;
+    }
+}
+
+/* FAQ */
+.card-body1 {
+    padding: 1rem 1rem;
+    background-color: #fdf6f8;
+}
+
+
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #555;
+    color: #303030;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
@@ -119,7 +708,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: calc(1.3rem + .6vw)
+    font-size: 20px
 }
 
 @media (min-width: 1200px) {
@@ -155,6 +744,7 @@ h6,
 
 p {
     margin-top: 0;
+    font-weight: 500;
     margin-bottom: 1rem
 }
 
@@ -236,7 +826,7 @@ sup {
 }
 
 a {
-    color: #a34075;
+    color: #ff0089;
     text-decoration: none
 }
 
@@ -797,7 +1387,7 @@ progress {
 
 .col-6 {
     flex: 0 0 auto;
-    width: 50%
+    width: 50%;
 }
 
 .col-7 {
@@ -2288,7 +2878,7 @@ progress {
 
 .form-control:disabled,
 .form-control:read-only {
-    background-color: #e9ecef;
+    background-color: #ffe7f1;
     opacity: 1
 }
 
@@ -4365,7 +4955,6 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs .nav-link {
-    margin-bottom: -1px;
     background: none;
     border: 1px solid transparent;
     border-top-left-radius: 8px;
@@ -7802,8 +8391,9 @@ fieldset:disabled .btn {
     margin-bottom: 1rem !important
 }
 
+
 .mb-4 {
-    margin-bottom: .5rem !important
+    margin-bottom: 2.5rem !important
 }
 
 .mb-5 {
@@ -8068,12 +8658,12 @@ fieldset:disabled .btn {
 
 .py-4 {
     padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important
+    padding-bottom: 1rem !important
 }
 
 .py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important
 }
 
 .pt-0 {
@@ -8141,7 +8731,7 @@ fieldset:disabled .btn {
 }
 
 .pb-4 {
-    padding-bottom: 1.5rem !important
+    padding-bottom: 1rem !important
 }
 
 .pb-5 {
@@ -8254,6 +8844,10 @@ fieldset:disabled .btn {
 }
 
 .text-center {
+    font-weight: 500 !important
+}
+
+.text-center {
     text-align: center !important
 }
 
@@ -8318,8 +8912,8 @@ fieldset:disabled .btn {
     color: #dc3545 !important
 }
 
-.text-light {
-    color: #DFE4FD !important
+.text-lighr {
+    color: #ffffff !important
 }
 
 .text-dark {
