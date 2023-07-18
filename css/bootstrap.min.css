@@ -635,6 +635,227 @@ h3 {
     background-color: #fdf6f8;
 }
 
+/* personal loan section */
+.custom-getting-loan-area {
+    display: block;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.custom-getting-loan-area .custom-getting-first {
+    padding-top: 70px;
+}
+
+.custom-getting-loan-area .custom-getting-items {
+    position: relative;
+    padding-left: 80px;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+}
+
+.custom-getting-loan-area .custom-getting-items:before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: #9E1E62;
+    width: 3px;
+    z-index: -1;
+}
+
+.custom-getting-loan-area .custom-getting-items i {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #9E1E62;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.custom-tittle h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.custom-tittle h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    /* Adjust the distance from the text */
+    left: 45px;
+    margin: 0;
+    right: 0;
+    transform: translateX(-50%);
+    width: 86px;
+    height: 3px;
+    background-color: #ff579d;
+    /* Adjust the color of the underline */
+}
+
+
+.custom-getting-loan-area .custom-getting-items h3 {
+    font: 600 20px/30px "Nunito", sans-serif;
+    color: #ff579d;
+    padding-top: 10px;
+}
+
+.custom-getting-loan-area .custom-getting-items p {
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 55px;
+}
+
+.custom-getting-loan-area .custom-getting-items:first-child i,
+.custom-getting-loan-area .custom-getting-items:first-child:before,
+.custom-getting-loan-area .custom-getting-items.gi_f i,
+.custom-getting-loan-area .custom-getting-items.gi_f:before {
+    background: #9E1E62;
+}
+
+.custom-getting-loan-area .custom-getting-items:last-child:before {
+    display: none;
+}
+
+.custom-getting-loan-area .custom-loan-card {
+    padding-left: 90px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.custom-getting-loan-area .custom-loan-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.custom-getting-loan-area .custom-loan-card {
+    padding: 13px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-getting-loan-area .custom-loan-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.custom-gla_2 {
+    padding-top: 160px;
+}
+
+.custom-gla_2 .custom-getting-first {
+    padding-top: 0;
+}
+
+.custom-gla_2 .custom-getting-first .custom-tittle {
+    padding-bottom: 75px;
+}
+
+.custom-gla_2 .custom-loan-card {
+    padding-left: 0;
+    padding-top: 100px;
+}
+
+.custom-gla_2 .custom-loan-card img {
+    margin-left: -130px;
+}
+
+.custom-required_documents {
+    display: block;
+    overflow: hidden;
+    padding: 130px 0 250px;
+}
+
+.custom-required_documents .table-responsive {
+    padding-left: 100px;
+}
+
+.custom-required_documents .table {
+    margin: 0;
+}
+
+.custom-required_documents .table thead tr th {
+    border: 0;
+    font: 600 18px/1 "Nunito", sans-serif;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.custom-required_documents .table thead tr th:first-child {
+    text-align: left;
+    font-size: 28px;
+}
+
+.custom-required_documents .table tbody tr td {
+    border: 0;
+    color: rgba(255, 255, 255, 0.702);
+    padding: 0;
+    font: 600 18px/52px "Nunito", sans-serif;
+    text-align: center;
+}
+
+.custom-required_documents .table tbody tr td:first-child {
+    text-align: left;
+}
+
+.custom-required_documents .table tbody tr td i {
+    font-size: 27px;
+}
+
+.custom-get_loan_area {
+    margin-top: -160px;
+    background: url("../img/get-oan-bg.jpg") no-repeat center;
+    background-size: cover;
+    padding: 95px 75px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.custom-get_loan_area:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(43, 94, 178, 0.702);
+    display: block;
+    z-index: -1;
+}
+
+.custom-get_loan_area p {
+    color: #fff;
+    font: 600 28px/45px "Nunito", sans-serif;
+    padding-bottom: 80px;
+}
+
+.custom-get_loan_area .theme_btn {
+    min-width: 234px;
+    text-transform: uppercase;
+}
+
+.custom-get_loan_area .theme_btn:before {
+    background: #2759ab;
+}
+
+.list-title h3 {
+    color: #000 !important;
+}
 
 body {
     margin: 0;
@@ -8662,7 +8883,7 @@ fieldset:disabled .btn {
 }
 
 .py-5 {
-    padding-top: 1rem !important;
+    padding-top: 2rem !important;
     padding-bottom: 1.5rem !important
 }
 
