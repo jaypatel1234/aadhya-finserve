@@ -16,22 +16,22 @@
     new WOW().init();
 
 
-    // Fixed Navbar
-    $(window).scroll(function () {
-        if ($(window).width() < 992) {
-            if ($(this).scrollTop() > 45) {
-                $('.fixed-top').addClass('bg-white shadow');
+    // Fixed Navbar    
+        $(window).scroll(function () {
+            if ($(window).width() < 992) {
+                if ($(this).scrollTop() > 45) {
+                    $('.fixed-top').addClass('bg-white shadow');
+                } else {
+                    $('.fixed-top').removeClass('bg-white shadow');
+                }
             } else {
-                $('.fixed-top').removeClass('bg-white shadow');
+                if ($(this).scrollTop() > 45) {
+                    $('.fixed-top').addClass('bg-white shadow').css('top', -45);
+                } else {
+                    $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
+                }
             }
-        } else {
-            if ($(this).scrollTop() > 45) {
-                $('.fixed-top').addClass('bg-white shadow').css('top', -45);
-            } else {
-                $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
-            }
-        }
-    });
+        });    
 
     // Back to top button
     $(window).scroll(function () {
@@ -65,6 +65,30 @@
             $(this).prev('.accordion-header').removeClass('active');
         });
     });
+
+    // Function to handle the active tab based on the current URL
+    function handleActiveTab() {
+        const currentPageUrl = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            const linkUrl = link.getAttribute('href');
+
+            if (linkUrl === currentPageUrl) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    }
+
+    // Call the function initially to set the active tab on page load
+    handleActiveTab();
+
+    // Attach the click event listener to each navigation link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.addEventListener('click', handleActiveTab));
+    
 
     // our loans JS end 
 

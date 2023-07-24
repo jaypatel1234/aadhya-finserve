@@ -18,6 +18,10 @@ namespace AadhyaFinserve.Controllers
             return View();
         }
 
+        public IActionResult Partner()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
