@@ -17,7 +17,7 @@
         rel="stylesheet" />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -311,7 +311,7 @@
                                             class="far fa-building icon-partner"></i></span> Builder</a></li>
                         </ul>
                         <div class="tab-content wow fadeInUp" data-wow-delay="0.1s" id="myTabContent">
-                            <div class="tab-pane fade" id="loan-agent" role="tabpanel" aria-labelledby="loan-agent-tab">
+                            <div class="tab-pane fade show active" id="loan-agent" role="tabpanel" aria-labelledby="loan-agent-tab">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -459,7 +459,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade show active" id="builder" role="tabpanel"
+                            <div class="tab-pane fade" id="builder" role="tabpanel"
                                 aria-labelledby="builder-tab">
                                 <div class="container">
                                     <div class="row">
@@ -631,21 +631,21 @@
                     should go for Online Loan DSA Registration to partner AADHYA FINSERVE INDIA as
                     a Loan DSA Partner.</p>
             </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 1.5rem;">
+            <div class="row" style="margin-bottom: 1.5rem;">
                 <div class="col-md-6">
                     <div class="accordion" id="loanAccordion">
 
                         <!-- investment free -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="investmentFreeHeading">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#investmentFreeCollapse" aria-expanded="false"
                                     aria-controls="investmentFreeCollapse">
-                                    <i class="fa fa-bars text-primary me-3"></i>Investment Free
+                                    <i class="fa fa-bars text-primary me-3"></i>Investment Fee
                                 </button>
                             </h2>
                             <div id="investmentFreeCollapse" class="accordion-collapse collapse"
-                                aria-labelledby="investmentFreeHeading" data-bs-parent="#investmentFreeAccordion">
+                                aria-labelledby="investmentFreeHeading" data-bs-parent="#loanAccordion">
                                 <div class="accordion1-body">
                                     <p>Being a AADHYA FINSERVE INDIA Business Partner comes easy to you, since you don't
                                         need to spend
@@ -1010,19 +1010,18 @@
                 </div>
                 <div style="padding-left: 10%" class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Loans</h4>
-                    <a class="btn btn-link" href="">Personal Loan</a>
-                    <a class="btn btn-link" href="">Home Loan</a>
-                    <a class="btn btn-link" href="">Car Loan</a>
-                    <a class="btn btn-link" href="">Business Loans</a>
-                    <a class="btn btn-link" href="">Loan Against Property</a>
+                    <a class="btn btn-link" href="loans.html#personalLoanSection">Personal Loan</a>
+                    <a class="btn btn-link" href="loans.html#homeLoanSection">Home Loan</a>
+                    <a class="btn btn-link" href="loans.html#carLoanSection">Car Loan</a>
+                    <a class="btn btn-link" href="loans.html#businessLoanSection">Business Loans</a>
+                    <a class="btn btn-link" href="loans.html#propertyLoanSection">Loan Against Property</a>
                 </div>
                 <div style="padding-left: 10%" class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="#">Partner With Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="loans.html">Our Loans</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <a class="btn btn-link" href="#">Terms & Condition</a>
                 </div>
             </div>
         </div>
@@ -1063,6 +1062,11 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
+            $(document).ready(function(){
+                $("#loan-agent-tab").addClass("active");
+
+    });
+
         //scrollwin function
         function scrollWin(x, y) {
             const formSection = document.getElementById("dsa-applynow");

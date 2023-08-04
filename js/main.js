@@ -15,7 +15,6 @@
     // Initiate the wowjs
     new WOW().init();
 
-
     // Fixed Navbar
     $(window).scroll(function () {
         if ($(window).width() < 992) {
