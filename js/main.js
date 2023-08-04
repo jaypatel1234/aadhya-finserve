@@ -68,6 +68,16 @@
     // our loans JS end 
 
     // Project carousel
+    $(document).ready(function() {
+        $('#header-carousel').on('slide.bs.carousel', function() {
+            $('.carousel-item').css('opacity', '0'); // Set opacity to 0 before sliding
+        });
+        
+        $('#header-carousel').on('slid.bs.carousel', function() {
+            $('.carousel-item.active').css('opacity', '1'); // Set opacity to 1 after sliding
+        });
+    });
+    
     $(".project-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
