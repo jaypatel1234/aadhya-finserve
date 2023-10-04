@@ -299,13 +299,40 @@ h2 {
 
 
 
+@media (max-width: 768px) {
+
+    .carousel-item img {
+      display: none;
+    }
+  
+    .carousel-item img.img-mobile {  
+      display: block;
+    }
+  
+  }
+
+
+  
+
 .page-header {
-    background: url(../img/loans.webp) top left/cover no-repeat
-}
+    background: url(../img/loans_large.webp) top left/cover no-repeat; 
+  }
+  
+  @media (max-width: 768px) {
+    .page-header {
+      background-image: url(../img/mobile_loan.webp); 
+    }
+  }
 
 .contact-header {
     background: url(../img/contact.webp) top left/cover no-repeat
 }
+
+@media (max-width: 768px) {
+    .contact-header {
+      background-image: url(../img/mobile_contact.webp); 
+    }
+  }
 
 .page-partner {
     background: url(../img/partnerheader.webp) top left/cover no-repeat
